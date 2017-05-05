@@ -3,9 +3,9 @@
 
 
 ## Depth First Search Algorithm
-### Input: Graph G = V , E
+### Input: Graph G = (V , E)
 ### Output: Graph G with its vertices marked with consecutive integers
-``
+```
 in the order they are first encountered by the DFS traversal
 mark each vertex in V with 0 as a mark of being “unvisited”
 count ← 0
@@ -20,4 +20,4 @@ dfs(v)
 count ← count + 1; mark v with count
 for each vertex w in V adjacent to v do
   if w is marked with 0
-    dfs(w)``
+    dfs(w)```
