@@ -14,7 +14,7 @@ graph2 = [[0, 2, 0, 6, 0],
          ]
 V2 = 5
 
-def findmin(key,visited):
+def findmin(key,visited,V):
     minv=9999
     min_pos=0
 
@@ -36,7 +36,7 @@ def prim(graph,V):
     parent[0] = 0
 
     for e in xrange(V-1):
-        i = findmin(key,visited)
+        i = findmin(key,visited,V)
         visited[i]=True
         for x in xrange(V):
             if (graph[i][x]>0 and visited[x]==False and graph[i][x] < key[x]):
